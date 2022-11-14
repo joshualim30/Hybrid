@@ -5,12 +5,12 @@
 // export enum TokenType
 export enum TokenType {
     // Literals
-    Null,
     Number,
     Identifier,
 
     // Keywords
     Let,
+    Const,
 
     // Grouping
     OpenParen,
@@ -18,6 +18,7 @@ export enum TokenType {
 
     // Operators
     Equals,
+    Semicolon,
     BinaryOperator,
     EOF // end of file
 }
@@ -25,7 +26,7 @@ export enum TokenType {
 // keywords array
 const KEYWORDS: Record<string, TokenType> = {
     "let": TokenType.Let,
-    "null": TokenType.Null,
+    "const": TokenType.Const,
 };
 
 // export interface Token
@@ -78,6 +79,10 @@ export function tokenize(sourceCode: string): Token[] {
         } else if (src[0] == "=") {
 
             tokens.push(token(src.shift()!, TokenType.Equals));
+
+        } else if (src[0] == ";") {
+
+            tokens.push(token(src.shift()!, TokenType.Semicolon));
 
         } else { // handle multi-character tokens
 

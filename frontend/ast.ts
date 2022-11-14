@@ -4,20 +4,29 @@
 
 // export NodeTypes
 export type NodeType = 
+    // Statements
     | "Program" 
-    | "NumberLiteral" 
-    | "NullLiteral"
+    | "VariableDeclaration"
+    // Expressions
+    | "AssignmentExpression"
+    | "NumberLiteral"
     | "Identifier" 
     | "BinaryExpression";
 
 // export interface statements
 export interface Statement { kind: NodeType; }
 
-// export interface Program
-export interface Program extends Statement { kind: "Program",  body: Statement[], }
-
 // export interface Expression
 export interface Expression extends Statement { }
+
+// export interface Program
+export interface Program extends Statement { kind: "Program",  body: Statement[] }
+
+// export interface VariableDeclaration 
+export interface VariableDeclaration extends Statement { kind: "VariableDeclaration", constant: boolean, identifier: string, value?: Expression }
+
+// export interface AssignmentExpression
+export interface AssignmentExpression extends Expression { kind: "AssignmentExpression", assignee: Expression, value: Expression }
 
 // export interface BinaryExpression
 export interface BinaryExpression extends Expression { kind: "BinaryExpression",  left: Expression,  right: Expression,  operator: string }
@@ -27,6 +36,3 @@ export interface Identifier extends Expression { kind: "Identifier",  symbol: st
 
 // export interface NumberLiteral
 export interface NumberLiteral extends Expression { kind: "NumberLiteral",  value: number }
-
-// export interface NullLiteral
-export interface NullLiteral extends Expression { kind: "NullLiteral",  value: "null" }

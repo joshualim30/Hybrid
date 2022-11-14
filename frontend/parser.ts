@@ -3,7 +3,7 @@
 // License: MIT
 
 // import ast.ts
-import { Statement, Program, Expression, BinaryExpression, NumberLiteral, Identifier, NullLiteral } from "./ast.ts";
+import { Statement, Program, Expression, BinaryExpression, NumberLiteral, Identifier, VariableDeclaration, AssignmentExpression } from "./ast.ts";
 
 // import lexer.ts
 import { tokenize, Token, TokenType } from "./lexer.ts";
@@ -63,15 +63,49 @@ export default class Parser {
     private parseStatement(): Statement {
         
         // skip to parseExpression() for now
-        return this.parseExpression();
+        switch(this.at().type) {
+            case TokenType.Let:
+            case TokenType.Const:
+                return this.parseVariableDeclaration();
+            default:
+                return this.parseExpression();
+        }
 
+    }
+
+    parseVariableDeclaration(): Statement {
+        // check if it is a let or const
+        const isConstant = this.next().type == TokenType.Const;
+        // get identifier if exists
+        const identifier = this.expect(TokenType.Identifier, "Expected identifier name after 'let' or 'const' keyword").value;
+        if (this.at().type == TokenType.Semicolon) {
+            this.next();
+            if (isConstant) {
+                throw "Expected value after 'const' keyword";
+            }
+            return { kind: "VariableDeclaration", identifier, constant: false } as VariableDeclaration;
+        }
+        this.expect(TokenType.Equals, "Expected equals token following identifier in var declaration.")
+        const declaration = { kind: "VariableDeclaration", identifier, value: this.parseExpression(), constant: isConstant } as VariableDeclaration;
+        this.expect(TokenType.Semicolon, "Variable declaration must end with a semicolon.");
+        return declaration;
     }
 
     // private parse expression function
     private parseExpression(): Expression {
+        // parse additive expression
+        return this.parseAssignmentExpression();
+    }
 
-        return this.parseAdditiveExpression(); // skip to parseAdditiveExpression() for now to follow the order of precedence
+    private parseAssignmentExpression(): Expression {
+        const left = this.parseAdditiveExpression(); // switch this out with objectExpression()
+        if (this.at().type == TokenType.Equals) {
+            this.next(); // advance past the equals token
+            const value = this.parseAssignmentExpression();
+            return { kind: "AssignmentExpression", assignee: left, value } as AssignmentExpression;
+        }
 
+        return left;
     }
 
     // private parse additive expression function
@@ -141,9 +175,6 @@ export default class Parser {
         const token = this.at().type;
 
         switch(token) {
-            case TokenType.Null:
-                this.next(); // advance to next token
-                return { kind: "NullLiteral", value: "null" } as NullLiteral;
             case TokenType.Identifier:
                 return { kind: "Identifier", symbol: this.next().value } as Identifier;
             case TokenType.Number:
