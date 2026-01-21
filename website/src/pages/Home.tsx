@@ -28,7 +28,7 @@ export default function Home() {
                             delay={500}
                             segments={[
                                 { text: "Flexible ", className: "font-sans" },
-                                { text: "Runtimes", className: "font-mono text-mutation italic" },
+                                { text: "Code", className: "font-mono text-mutation italic" },
                                 { text: "\nfor ", className: "font-sans block mt-2 md:mt-4" },
                                 { text: "Flexible ", className: "font-comic text-green-600" },
                                 { text: "Environments", className: "font-display text-accent uppercase tracking-tighter" },
