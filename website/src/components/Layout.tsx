@@ -114,7 +114,8 @@ export default function Layout() {
                                 <span className="font-display text-lg uppercase tracking-wider">Hybrid</span>
                             </Link>
                             <p className="font-mono text-xs opacity-60 max-w-xs leading-relaxed">
-                                A high-performance polyglot runtime engine. Write the orchestration in Hybrid, the data in Python, and the bottlenecks in Rust.
+                                Flexible Code for Flexible Environments.
+                                Write once, run anything.
                             </p>
                         </div>
 
@@ -138,7 +139,7 @@ export default function Layout() {
                     </div>
 
                     <div className="pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono opacity-40 uppercase tracking-widest">
-                        <span>© 2026 Joshua Lim. Flexible Code for Flexible Environments.</span>
+                        <span>© 2026 Joshua Lim. MIT License.</span>
                         <p className="flex items-center gap-2 hover:text-mutation transition-colors">
                             Made with ❤️ thanks to the open source community :&#41;
                         </p>
