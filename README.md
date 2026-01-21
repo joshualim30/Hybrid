@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="extension/images/hybrid_logo.png" alt="Hybrid Logo" width="160" />
-  <h2>Flexible Runtimes for Flexible Environments</h2>
+  <h2>Flexible Code for Flexible Environments</h2>
 
   [![Build Status](https://github.com/joshualim30/hybrid/actions/workflows/build.yml/badge.svg)](https://github.com/joshualim30/hybrid/actions)
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)

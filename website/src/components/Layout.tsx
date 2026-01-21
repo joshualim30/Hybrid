@@ -19,7 +19,7 @@ export default function Layout() {
         const path = location.pathname.substring(1)
         const pageName = path.charAt(0).toUpperCase() + path.slice(1)
         // More professional code-like title
-        document.title = pageName ? `Hybrid :: ${pageName}` : 'Hybrid :: Flexible Runtime'
+        document.title = pageName ? `Hybrid :: ${pageName}` : 'Hybrid :: Flexible Code'
         window.scrollTo(0, 0)
     }, [location])
 
