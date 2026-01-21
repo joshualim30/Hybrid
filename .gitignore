@@ -1,101 +1,24 @@
-# Hybrid Language Project - .gitignore
-
-# Rust/Cargo
+# Rust
 target/
+**/*.rs.bk
 Cargo.lock
-*.pdb
 
-# Node.js/NPM (for VS Code extension)
+# Node
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.tgz
-*.tar.gz
+npm-debug.log
+yarn-error.log
 
 # VS Code Extension
+.vscode-test/
 extension/out/
-extension/*.vsix
 *.vsix
+extension/node_modules/
 
-# IDE and Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Operating System
+# Mac
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
-# Temporary files
-*.tmp
-*.temp
-*.log
-
-# Build artifacts
-*.exe
-*.dll
-*.so
-*.dylib
-
-# Test files (keep structure but ignore outputs)
-test_output/
-*.test
-*.result
-
-# Documentation builds
-docs/_build/
-site/
-
-# Environment files
-.env
-.env.local
-.env.*.local
-.env.production
-.env.development
-.env.test
-
-# Security sensitive files
-*.key
-*.pem
-*.p12
-*.pfx
-config/secrets.json
-secrets/
-private/
-
-# Backup files
-*.bak
-*.backup
-*.orig
-
-# Compiled binaries
-/language/target/
-/language/hybrid
-/language/hybrid.exe
-
-# Extension compilation
-/extension/out/
-/extension/node_modules/
+# Hybrid Generated
+*.dSYM
 
 # Directories
-website/
-
-# Package manager lock files (keep package-lock.json but ignore others)
-yarn.lock
-pnpm-lock.yaml
-
-# Coverage reports
-coverage/
-*.lcov
-.nyc_output/
-
-# Dependency directories
-jspm_packages/
+website

@@ -9,9 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/joshualim30/hybrid.git"
   },
-  "icon": "images/hybrid-logo.png",
+  "icon": "images/hybrid_logo.png",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.104.0"
   },
   "categories": [
     "Programming Languages"
@@ -23,6 +23,9 @@
     "rust"
   ],
   "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:hybrid"
+  ],
   "contributes": {
     "languages": [
       {
@@ -56,6 +59,18 @@
         "title": "Open Hybrid REPL",
         "category": "Hybrid",
         "icon": "$(terminal)"
+      },
+      {
+        "command": "hybrid.transpile_rust",
+        "title": "Transpile to Rust",
+        "category": "Hybrid",
+        "icon": "$(file-code)"
+      },
+      {
+        "command": "hybrid.transpile_python",
+        "title": "Transpile to Python",
+        "category": "Hybrid",
+        "icon": "$(file-code)"
       }
     ],
     "keybindings": [
@@ -77,6 +92,16 @@
           "when": "resourceExtname == .hyb",
           "command": "hybrid.run",
           "group": "hybrid@1"
+        },
+        {
+          "when": "resourceExtname == .hyb",
+          "command": "hybrid.transpile_rust",
+          "group": "hybrid@2"
+        },
+        {
+          "when": "resourceExtname == .hyb",
+          "command": "hybrid.transpile_python",
+          "group": "hybrid@3"
         }
       ],
       "commandPalette": [
@@ -111,6 +136,8 @@
   "bugs": {
     "url": "https://github.com/joshualim30/hybrid/issues"
   },
-  "homepage": "https://github.com/joshualim30/hybrid#readme"
+  "homepage": "https://github.com/joshualim30/hybrid#readme",
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1"
+  }
 }
-

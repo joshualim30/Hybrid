@@ -13,7 +13,7 @@ Thank you for your interest in contributing to the Hybrid programming language! 
 
 1. **Fork and clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/hybrid.git
+   git clone https://github.com/joshualim30/hybrid.git
    cd hybrid
    ```
 
@@ -35,51 +35,21 @@ Thank you for your interest in contributing to the Hybrid programming language! 
 
 ## 🛠️ Development Workflow
 
-### Making Changes
+### Workflow
 
-1. **Create a feature branch:**
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
+1.  **Branch**: `git checkout -b feature/your-feature`
+2.  **Code**: Follow standards (run `cargo fmt` & `cargo clippy`)
+3.  **Test**: `cargo test` and `cargo build`
+4.  **Commit**: Use descriptive messages (e.g., `Add: while loops`, `Fix: parser error`)
+5.  **Push**: `git push origin feature/your-feature`
+6.  **PR**: Open a specific Pull Request on GitHub
 
-2. **Make your changes** following the coding standards below
-
-3. **Test your changes:**
-   ```bash
-   cargo test
-   cargo build
-   ./target/debug/hybrid ../tests/basic.hyb
-   ```
-
-4. **Commit your changes:**
-   ```bash
-   git add .
-   git commit -m "Add: brief description of your changes"
-   ```
-
-5. **Push to your fork:**
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-6. **Open a Pull Request** on GitHub
-
-### Commit Message Guidelines
-
-Use clear, descriptive commit messages:
-- `Add: new feature or functionality`
-- `Fix: bug fixes`
-- `Update: improvements to existing features`
-- `Docs: documentation changes`
-- `Test: adding or updating tests`
-
-Examples:
-```
-Add: support for while loops in parser
-Fix: division by zero error handling
-Update: improve error messages in lexer
-Docs: add examples for function syntax
-```
+### Commit Prefixes
+- `Add`: New features
+- `Fix`: Bug fixes
+- `Update`: Improvements
+- `Docs`: Documentation
+- `Test`: Testing
 
 ## 📝 Coding Standards
 
@@ -187,18 +157,22 @@ echo 'var x = 10; speak("x =", x);' > test.hyb
 ## 🐛 Reporting Issues
 
 ### Bug Reports
-When reporting bugs, please include:
+When reporting bugs, please use our [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.md) and include:
 - **Description**: What happened vs. what you expected
 - **Code Sample**: Minimal example that reproduces the issue
 - **Environment**: OS, Rust version, etc.
 - **Error Output**: Full error messages or stack traces
 
+**[Open a Bug Report](https://github.com/joshualim30/hybrid/issues/new?template=bug_report.md)**
+
 ### Feature Requests
-For new features, please describe:
+For new features, please use our [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.md) and describe:
 - **Use Case**: Why is this feature needed?
 - **Proposed Syntax**: How should it work?
 - **Examples**: Code samples showing the feature in use
 - **Alternatives**: Other ways to achieve the same goal
+
+**[Request a Feature](https://github.com/joshualim30/hybrid/issues/new?template=feature_request.md)**
 
 ## 📋 Pull Request Guidelines
 

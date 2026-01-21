@@ -4,20 +4,20 @@
 speak("=== Basic Hybrid Language Test ===");
 
 // Test variables
-var x = 10;
-var y = 20;
+int var x = 10;
+int var y = 20;
 speak("x =", x);
 speak("y =", y);
 
 // Test constants
-const message = "Hello from Hybrid!";
+string const message = "Hello from Hybrid!";
 speak(message);
 
 // Test arithmetic
-var sum = x + y;
-var product = x * y;
-var difference = y - x;
-var quotient = y / x;
+int var sum = x + y;
+int var product = x * y;
+int var difference = y - x;
+int var quotient = y / x;
 
 speak("Sum:", sum);
 speak("Product:", product);
@@ -25,25 +25,25 @@ speak("Difference:", difference);
 speak("Quotient:", quotient);
 
 // Test string concatenation
-var greeting = "The sum is: " + sum;
+string var greeting = "The sum is: " + sum;
 speak(greeting);
 
 // Test function definition
-block add(a, b) {
+int block add(int a, int b) {
     return a + b;
 }
 
 // Test function call
-var result = add(15, 25);
+int var result = add(15, 25);
 speak("add(15, 25) =", result);
 
 // Test nested expressions
-var complex = (x + y) * 2 - 5;
+int var complex = (x + y) * 2 - 5;
 speak("(x + y) * 2 - 5 =", complex);
 
 // Test boolean values
-var isTrue = true;
-var isFalse = false;
+bool var isTrue = true;
+bool var isFalse = false;
 speak("Boolean true:", isTrue);
 speak("Boolean false:", isFalse);
 
