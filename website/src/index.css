@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-surface: #ffffff;
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 1);
+  }
+
+  /* Force dark mode via .dark class */
+  .dark {
+    --bg-surface: #0a0a0a;
+    /* Darker, cleaner background */
+    --color-primary: #ffffff;
+    --color-secondary: #000000;
+    --shadow-color: rgba(255, 255, 255, 1);
+  }
+
+  body {
+    background-color: var(--bg-surface);
+    color: var(--color-primary);
+    overflow-x: hidden;
+    transition: color 0.2s ease, background-color 0.2s ease;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 40px rgba(124, 58, 237, 0.5);
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--bg-surface);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border: 2px solid var(--bg-surface);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+  }
+
+  .clip-text-image {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}

@@ -20,5 +20,6 @@ extension/node_modules/
 # Hybrid Generated
 *.dSYM
 
-# Directories
-website
+# Firebase
+website/.firebase
+firebase-debug.log
