@@ -1,6 +1,7 @@
 import { Download as DownloadIcon, ChevronRight, Apple, Layout as Windows, Terminal as Linux, Monitor, Check } from 'lucide-react'
 import { useDeviceDetector } from '../components/DeviceDetector'
 import TerminalWindow from '../components/TerminalWindow'
+import SEO from '../components/SEO'
 
 export default function Download() {
     const device = useDeviceDetector()
@@ -13,6 +14,10 @@ export default function Download() {
 
     return (
         <div className="min-h-screen bg-surface overflow-hidden">
+            <SEO
+                title="Download"
+                description="Get Hybrid for macOS, Windows, or Linux. Start building high-performance applications today."
+            />
             {/* Mobile Empty State */}
             <div className="md:hidden flex flex-col items-center justify-center min-h-[80vh] px-6 text-center animate-fade-in-up">
                 <div className="w-20 h-20 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 border border-primary/10">

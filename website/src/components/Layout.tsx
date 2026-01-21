@@ -138,7 +138,7 @@ export default function Layout() {
                     </div>
 
                     <div className="pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono opacity-40 uppercase tracking-widest">
-                        <span>© 2026 Joshua Lim. MIT License.</span>
+                        <span>© 2026 Joshua Lim. Flexible Code for Flexible Environments.</span>
                         <p className="flex items-center gap-2 hover:text-mutation transition-colors">
                             Made with ❤️ thanks to the open source community :&#41;
                         </p>

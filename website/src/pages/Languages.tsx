@@ -1,9 +1,15 @@
 import LanguageTicker from '../components/LanguageTicker'
 import { CheckCircle2, Circle, ArrowRight } from 'lucide-react'
 
+import SEO from '../components/SEO'
+
 export default function Languages() {
     return (
         <div className="min-h-screen bg-surface overflow-hidden">
+            <SEO
+                title="Roadmap"
+                description="Explore the future of Hybrid: Foreign Function Interfaces (FFI) for Python, Node.js, and more."
+            />
             {/* Hero Section */}
             <section className="container mx-auto px-6 pt-32 pb-20 text-center">
                 <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 bg-surface/50 backdrop-blur-sm rounded-full border border-primary/10 shadow-sm">

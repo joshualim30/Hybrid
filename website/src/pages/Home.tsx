@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom'
 import TerminalWindow from '../components/TerminalWindow'
 import StatsTicker from '../components/StatsTicker'
 import { RichTypewriter } from '../components/TypewriterEffect'
+import SEO from '../components/SEO'
 
 export default function Home() {
     return (
         <div className="overflow-hidden bg-surface">
+            <SEO title="Hybrid" />
             {/* Hero Section */}
             <section className="container mx-auto px-6 pt-32 pb-24 md:pt-48 md:pb-40 relative">
                 {/* Background Decor */}

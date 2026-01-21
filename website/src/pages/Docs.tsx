@@ -1,6 +1,7 @@
 import { Terminal, Code2, Rocket, Shield, Cpu, Command, AppWindow } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import TerminalWindow from '../components/TerminalWindow'
+import SEO from '../components/SEO'
 
 export default function Docs() {
     const [activeSection, setActiveSection] = useState('getting-started')
@@ -44,6 +45,10 @@ export default function Docs() {
 
     return (
         <div className="min-h-screen bg-surface pt-32 pb-24">
+            <SEO
+                title="Documentation"
+                description="Learn how to install, configure, and code with Hybrid. Comprehensive guides and API references."
+            />
             <div className="container mx-auto px-6 grid md:grid-cols-[260px_1fr] gap-16">
                 {/* Sidebar */}
                 <aside className="hidden md:block">
