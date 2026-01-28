@@ -13,7 +13,7 @@ Thank you for your interest in contributing to the Hybrid programming language! 
 
 1. **Fork and clone the repository:**
    ```bash
-   git clone https://github.com/joshualim30/hybrid.git
+   git clone https://github.com/Creating-Real/hybrid.git
    cd hybrid
    ```
 
@@ -163,7 +163,7 @@ When reporting bugs, please use our [Bug Report Template](.github/ISSUE_TEMPLATE
 - **Environment**: OS, Rust version, etc.
 - **Error Output**: Full error messages or stack traces
 
-**[Open a Bug Report](https://github.com/joshualim30/hybrid/issues/new?template=bug_report.md)**
+**[Open a Bug Report](https://github.com/Creating-Real/hybrid/issues/new?template=bug_report.md)**
 
 ### Feature Requests
 For new features, please use our [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.md) and describe:
@@ -172,7 +172,7 @@ For new features, please use our [Feature Request Template](.github/ISSUE_TEMPLA
 - **Examples**: Code samples showing the feature in use
 - **Alternatives**: Other ways to achieve the same goal
 
-**[Request a Feature](https://github.com/joshualim30/hybrid/issues/new?template=feature_request.md)**
+**[Request a Feature](https://github.com/Creating-Real/hybrid/issues/new?template=feature_request.md)**
 
 ## 📋 Pull Request Guidelines
 
@@ -200,8 +200,8 @@ Include in your PR description:
 
 ## 📞 Getting Help
 
-- **Questions**: Open a [Discussion](https://github.com/joshualim30/hybrid/discussions)
-- **Issues**: Check existing [Issues](https://github.com/joshualim30/hybrid/issues)
+- **Questions**: Open a [Discussion](https://github.com/Creating-Real/hybrid/discussions)
+- **Issues**: Check existing [Issues](https://github.com/Creating-Real/hybrid/issues)
 - **Chat**: Join our community discussions
 
 ## 🏆 Recognition

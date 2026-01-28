@@ -34,7 +34,7 @@ if [ ! -w "$INSTALL_DIR" ]; then
 fi
 
 echo "⬇️  Downloading Hybrid CLI..."
-# curl -L "https://github.com/joshualim30/hybrid/releases/latest/download/hybrid-$PLATFORM-$BINARY_ARCH" -o /tmp/hybrid
+# curl -L "https://github.com/Creating-Real/hybrid/releases/latest/download/hybrid-$PLATFORM-$BINARY_ARCH" -o /tmp/hybrid
 # $SUDO mv /tmp/hybrid $INSTALL_DIR/hybrid
 # $SUDO chmod +x $INSTALL_DIR/hybrid
 

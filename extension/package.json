@@ -7,7 +7,7 @@
   "author": "Joshua Lim <hi@joshualim.me>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshualim30/hybrid.git"
+    "url": "git+https://github.com/Creating-Real/hybrid.git"
   },
   "icon": "images/hybrid_logo.png",
   "engines": {
@@ -23,9 +23,6 @@
     "rust"
   ],
   "main": "./out/extension.js",
-  "activationEvents": [
-    "onLanguage:hybrid"
-  ],
   "contributes": {
     "languages": [
       {
@@ -134,9 +131,9 @@
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/joshualim30/hybrid/issues"
+    "url": "https://github.com/Creating-Real/hybrid/issues"
   },
-  "homepage": "https://github.com/joshualim30/hybrid#readme",
+  "homepage": "https://github.com/Creating-Real/hybrid#readme",
   "dependencies": {
     "vscode-languageclient": "^9.0.1"
   }

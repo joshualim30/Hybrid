@@ -67,7 +67,7 @@ export default function Layout() {
                         <div className="h-4 w-[2px] bg-primary/20"></div>
 
                         <a
-                            href="https://github.com/joshualim30/hybrid"
+                            href="https://github.com/Creating-Real/hybrid"
                             target="_blank"
                             rel="noreferrer"
                             className="bg-primary text-secondary px-4 py-1.5 font-bold text-xs uppercase tracking-wider border border-primary shadow-neobrutalism-sm hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all flex items-center gap-2"
@@ -89,7 +89,7 @@ export default function Layout() {
                         <Link to="/docs" className="text-lg font-mono font-bold hover:text-accent" onClick={() => setIsMenuOpen(false)}>Docs</Link>
                         <Link to="/download" className="text-lg font-mono font-bold hover:text-mutation" onClick={() => setIsMenuOpen(false)}>Install CLI</Link>
                         <hr className="border-primary/10" />
-                        <a href="https://github.com/joshualim30/hybrid" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-lg font-mono font-bold hover:text-primary/70">
+                        <a href="https://github.com/Creating-Real/hybrid" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-lg font-mono font-bold hover:text-primary/70">
                             <Github size={20} />
                             GitHub
                         </a>
@@ -131,7 +131,7 @@ export default function Layout() {
                         <div>
                             <h4 className="font-mono text-xs font-bold uppercase tracking-wider opacity-50 mb-4">Community</h4>
                             <div className="flex flex-col gap-2 font-mono text-sm">
-                                <a href="https://github.com/joshualim30/hybrid" target="_blank" rel="noreferrer" className="hover:text-mutation transition-colors">GitHub</a>
+                                <a href="https://github.com/Creating-Real/hybrid" target="_blank" rel="noreferrer" className="hover:text-mutation transition-colors">GitHub</a>
                                 <a href="https://discord.gg/faAehkDX3C" target="_blank" rel="noreferrer" className="hover:text-accent transition-colors">Discord</a>
                                 <a href="https://twitter.com/joshualim30" target="_blank" rel="noreferrer" className="hover:text-mutation transition-colors">Twitter</a>
                             </div>

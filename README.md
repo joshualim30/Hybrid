@@ -4,9 +4,9 @@
   <img src="extension/images/hybrid_logo.png" alt="Hybrid Logo" width="160" />
   <h2>Flexible Code for Flexible Environments</h2>
 
-  [![Build Status](https://github.com/joshualim30/hybrid/actions/workflows/build.yml/badge.svg)](https://github.com/joshualim30/hybrid/actions)
+  [![Build Status](https://github.com/Creating-Real/hybrid/actions/workflows/build.yml/badge.svg)](https://github.com/Creating-Real/hybrid/actions)
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-  [![Version](https://img.shields.io/badge/version-0.1.0-orange)](https://github.com/joshualim30/hybrid/releases)
+  [![Version](https://img.shields.io/badge/version-0.1.0-orange)](https://github.com/Creating-Real/hybrid/releases)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
   [![VS Code](https://img.shields.io/badge/VS%20Code-Extension-007ACC?logo=visualstudiocode)](https://marketplace.visualstudio.com)
 </div>
@@ -43,7 +43,7 @@
 
 1.  **Build the Core CLI**:
     ```bash
-    git clone https://github.com/joshualim30/hybrid.git
+    git clone https://github.com/Creating-Real/hybrid.git
     cd hybrid/language
     cargo install --path .
     ```

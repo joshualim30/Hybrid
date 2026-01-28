@@ -125,7 +125,7 @@ export default function Languages() {
                         Help us expand the Hybrid ecosystem. Contribute a bridge or request a new integration on GitHub.
                     </p>
                     <a
-                        href="https://github.com/joshualim30/hybrid/issues"
+                        href="https://github.com/Creating-Real/hybrid/issues"
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 bg-primary text-secondary font-bold text-base px-8 py-3 rounded-sm border border-primary shadow-neobrutalism hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all uppercase tracking-wider"

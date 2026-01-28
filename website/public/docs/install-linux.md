@@ -15,14 +15,14 @@ This script detects your architecture and distribution, downloads the correct bi
 ## DEB Package (Debian/Ubuntu)
 
 ```bash
-wget https://github.com/joshualim30/hybrid/releases/latest/download/hybrid_amd64.deb
+wget https://github.com/Creating-Real/hybrid/releases/latest/download/hybrid_amd64.deb
 sudo dpkg -i hybrid_amd64.deb
 ```
 
 ## RPM Package (Fedora/RHEL)
 
 ```bash
-sudo rpm -i https://github.com/joshualim30/hybrid/releases/latest/download/hybrid.x86_64.rpm
+sudo rpm -i https://github.com/Creating-Real/hybrid/releases/latest/download/hybrid.x86_64.rpm
 ```
 
 ## Arch Linux (AUR)

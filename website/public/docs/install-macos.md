@@ -13,7 +13,7 @@ brew install hybrid
 
 ## Manual Installation (Universal Binary)
 
-1. Download the latest `hybrid-macos-universal.tar.gz` from the [Releases](https://github.com/joshualim30/hybrid/releases) page.
+1. Download the latest `hybrid-macos-universal.tar.gz` from the [Releases](https://github.com/Creating-Real/hybrid/releases) page.
 2. Extract the archive:
    ```bash
    tar -xvf hybrid-macos-universal.tar.gz

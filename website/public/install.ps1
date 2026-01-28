@@ -15,7 +15,7 @@ if (!(Test-Path $InstallDir)) {
 }
 
 Write-Host "⬇️  Downloading Hybrid CLI..." -ForegroundColor Gray
-# Invoke-WebRequest -Uri "https://github.com/joshualim30/hybrid/releases/latest/download/hybrid-windows-x64.exe" -OutFile "$InstallDir\hybrid.exe"
+# Invoke-WebRequest -Uri "https://github.com/Creating-Real/hybrid/releases/latest/download/hybrid-windows-x64.exe" -OutFile "$InstallDir\hybrid.exe"
 
 $CurrentPath = [Environment]::GetEnvironmentVariable("Path", "User")
 if ($CurrentPath -notlike "*$InstallDir*") {
